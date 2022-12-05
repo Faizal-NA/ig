@@ -200,7 +200,7 @@ def banner():
 \x1b[0;35m┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆┉࿆ ┉࿆ 
 \x1b[0;33m╔̶̶═̶̶═̶̶═̶̶═̶̶═̶═̶═̶═̶̶═̶̶═̶̶═̶̶═̶═̶═̶ ❖☆͜͡✟❖✠═̶̶═̶̶═̶̶═̶̶═̶═̶̶═̶═̶̶═̶̶═̶̶═̶̶═̶═̶̶═̶╗   \x1b[0;35m┊    ┊   ┊  ┊ ┊   ┊  ┊     \x1b[0;34m⊹ 
 \x1b[0;33m   ╔҉ ╾҉ ╾҉ ╾҉ ╾҉ ╾҉ ╾҉ ❖✠ৡৢ͜͡♛╼҉ ╾҉ ╾҉ ╾҉ ╾҉ ╼҉ ╗҉       \x1b[0;35m┊  \x1b[0;37m⋆\x1b[0;34m｡\x1b[0;35m┊   ┊  ┊ ┊   ┊ \x1b[0;37m⋆\x1b[0;34m｡˚. \x1b[0;37mੈ 
-\x1b[0;37m         ✞ঔৣ͜͡  GRAM PREMIUM  ঔৣ͜͡✞     \x1b[0;35m┊    ┊   ┊  \x1b[0;37m✫ 
+\x1b[0;37m         ✞ঔৣ͜͡  FAIZAL GANTENG ঔৣ͜͡✞     \x1b[0;35m┊    ┊   ┊  \x1b[0;37m✫ 
 \x1b[0;33m   ╚҉ ╾҉ ╾҉ ╾҉ ╾҉ ╾҉ ╾҉ ❖✠ৡৢ͜͡♛╼҉  ╾҉ ╾҉ ╾҉ ╾҉╼҉ ╝҉       \x1b[0;35m┊ \x1b[0;37m⊹  \x1b[0;35m┊        \x1b[0;37m⋆\x1b[0;34m｡˚.\x1b[0;37m ੈ 
 \x1b[0;33m╚̶̶═̶̶═̶̶═̶̶═̶̶═̶═̶═̶═̶̶═̶̶═̶̶═̶̶═̶═̶═̶ ❖☆͜͡✟❖✠═̶̶═̶̶═̶̶═̶̶═̶═̶̶═̶═̶̶═̶̶═̶̶═̶̶═̶═̶̶═̶╝   \x1b[0;37m✯ ⋆  \x1b[0;35m┊  \x1b[0;34m.  ˚               \x1b[0;37m⊹
 \x1b[0;35m┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆ ┉࿆┉࿆ ┉࿆
@@ -275,7 +275,7 @@ def User_Agent():
 		'133','320','515','160','640','240','120'
 		'800','480','225','768','216','1024']
 	model_phone = [
-		'Nokia 2.4','HUAWEI','Galaxy',
+		'Redmi 5A','HUAWEI','Galaxy',
 		'Unlocked Smartphones','Nexus 6P',
 		'Mobile Phones','Xiaomi',
 		'samsung','OnePlus']
@@ -629,7 +629,7 @@ class instagram:
                     'accept':'*/*',
                     'x-requested-with':'XMLHttpRequest',
                     'x-asbd-id':'198387',
-                     'user-agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.66 Mobile Safari/537.36',
+                     'user-agent': ua,
                      'x-csrftoken':p.cookies['csrftoken'],
                      'x-ig-app-id':'1217981644879628',
                      'origin':'https://www.instagram.com',
@@ -645,7 +645,7 @@ class instagram:
 			"optIntoOneTap": 'false',
 			"stopDeletionNonce": "",
 			"trustedDeviceRecords": "{}"}
-				#respon=ses.post("https://www.instagram.com/accounts/login/ajax/", data=data, allow_redirects=True)
+				respon=ses.post("https://www.instagram.com/accounts/login/ajax/", data=data, allow_redirects=True)
 				ncek=json.loads(respon.text)
 				if 'userId' in str(ncek):
 					nama,pengikut,mengikut,postingan=self.eksekusiinfo(user)
